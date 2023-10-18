@@ -73,7 +73,7 @@ function updateTime() {
   function formatZerosMILSECONDS(time) {
     time = time.toString();
     if (time.length === 1) {
-      return "00" + time;
+      return "0" + time;
     } else if (time.length === 2) {
       return "0" + time;
     } else {

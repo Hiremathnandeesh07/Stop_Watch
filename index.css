@@ -1,0 +1,81 @@
+/* Reset default browser styles */
+body,
+div,
+button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Style the container */
+#timeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #d3cdcd;
+}
+
+/* Style the content box */
+#contentBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border: 3px solid #40c437;
+  border-radius: 15px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  max-width: 80%;
+}
+
+/* Style the time display */
+#timeDisplay {
+  font-size: 2.5rem;
+  border-radius: 5px;
+  font-family: consolas, monospace;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  width: 300px;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+
+/* Style the buttons */
+.timerbtn {
+  font-family: consolas, monospace;
+  background-color: #207819;
+  color: #fff;
+  font-size: 2rem;
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  width: 300px;
+}
+
+.timerbtn:hover {
+  background-color: #26821f;
+}
+
+/* Media query for responsiveness */
+@media (min-width: 768px) {
+  #timeContainer {
+    height: auto;
+  }
+
+  #contentBox {
+    width: 60%;
+  }
+
+  .timerbtn {
+    width: 300px;
+    max-width: 80%;
+  }
+}
